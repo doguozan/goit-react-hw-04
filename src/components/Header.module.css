@@ -1,0 +1,79 @@
+:root {
+  --font-size-base: 18px;
+  --font-size-lg: 1.5rem;
+  --font-size-xl: 2.25rem;
+  --font-weight-normal: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.75rem;
+  width: 100%;
+  padding: 2.5rem 1rem;
+  background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.header h1 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 0;
+  letter-spacing: 0.75px;
+}
+
+.searchInput {
+  padding: 14px 24px;
+  font-size: var(--font-size-base);
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  margin-right: 12px;
+  width: 350px;
+  background: rgba(255, 255, 255, 0.95);
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.searchInput::placeholder {
+  text-align: center;
+  color: #666;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.searchInput:focus::placeholder {
+  color: #bbbbbb;
+}
+
+form {
+  margin: 0.5rem 0;
+
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+button {
+  padding: 14px 28px;
+  font-size: var(--font-size-base);
+  background: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: var(--font-weight-semibold);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
